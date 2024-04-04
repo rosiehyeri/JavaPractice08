@@ -1,3 +1,4 @@
+
 package com.javaex.ex04;
 
 import java.util.Scanner;
@@ -19,6 +20,10 @@ public class SumApp {
 		for(String number : numbers) {
 			sum += Integer.parseInt(number);		// 문자열로 표현된 숫자를 정수로 변환
 		}
+		
+//		for (int i=0; i < data.length; i++) {			// 이렇게 써도 됨
+//			int num = Integer.parseInt(data[i]);
+//		}
 		
 		
 		

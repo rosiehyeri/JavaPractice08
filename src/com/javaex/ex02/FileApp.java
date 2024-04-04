@@ -11,13 +11,16 @@ public class FileApp {
 		try {
 			fileRead();
 		} catch (IOException e){
-			System.out.println("파일이 없습니다.");
+			System.err.println("파일이 없습니다.");
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
 	}
 
 	// 수정하지 마세요
-	public static void fileRead() throws IOException{
+	public static void fileRead() throws IOException{			
+		// IOException은 대표적인 checked Exception. -> 반드시 예외처리 해야 
 		throw new IOException(); // 강제로 예외 발생
 	}
 }

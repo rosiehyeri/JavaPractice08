@@ -26,7 +26,11 @@ public class LastNumberApp {
 			result = intArray[3];
 			System.out.println(result);
 		} catch (ArrayIndexOutOfBoundsException e) {
+			// 구체적 예외 처리를 앞쪽에서
 			System.out.println("배열의 범위를 넘었습니다.");
+		} catch (Exception e) {						// 그래도 남아있는 작은 오류도 처리해줌
+			// 일반적인 예외는 뒤쪽에서
+			e.printStackTrace();
 		}
 		
 	}
